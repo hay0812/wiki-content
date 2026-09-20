@@ -1,0 +1,28 @@
+---
+title: ようこそ
+description: ようこそ
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: おめでとう！
+    image:
+    file: ../../../assets/houston.webp
+  actions:
+    - text: Example Guide
+      link: /guides/example/
+      icon: right-arrow
+    - text: Read the Starlight docs
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 新しい記事
+
+<CardGrid stagger>
+	<LinkCard
+		title="Astro"
+		href="/ja/astro"
+		description="Astroとはコンテンツ駆動型のサイトの開発において広く採用されている。"
+	/>
+</CardGrid>
