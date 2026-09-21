@@ -5,21 +5,10 @@ description: Astro（アストロ）はWebサイトを制作するためのJavaS
 Astro（アストロ）は、Webサイトの構築に適したJavaScript/TypeScriptベースのフロントエンドフレームワークである。コンテンツ駆動型のサイト（ブログ、ドキュメントサイト、コーポレートサイトなど）の開発において広く採用されている。
 
 
-このページは、MDXパーサーおよびサニタイズライブラリ（`rehype-sanitize` や `DOMPurify` など）が不正なスクリプトを正しく無害化できているかを検証するためのものです。
-
 ## 特徴
 Astroを特徴づける仕組みの一つが、Islands Architectureである。
 ページ全体を一つのJavaScriptアプリケーションとして実行するのではなく、ページの大部分をHTMLとして生成し、インタラクティブ性が必要な部分だけを「Island（島）」として独立して動作させる。
 
-例えば、以下のようなページを考える。
-
-ページ
-├── ヘッダー       → 静的HTML
-├── 本文           → 静的HTML
-├── 画像           → 静的HTML
-├── 検索フォーム   → JavaScript Island
-├── カルーセル     → JavaScript Island
-└── フッター       → 静的HTML
 
 これにより、ページ全体をJavaScriptで動作させる必要がなくなる。
 Astroでは、UIコンポーネントに client:* ディレクティブを指定することで、どのコンポーネントをクライアント側で実行するかを明示できる。例えば client:load、client:idle、client:visible などがある。
