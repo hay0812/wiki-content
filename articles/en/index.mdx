@@ -17,10 +17,12 @@ hero:
 ---
 ## Latest Articles
 
-<CardGrid stagger>
-    <LinkCard
-        title="Astro"
-        href="/en/astro"
-        description="Astro is widely adopted for developing content-driven sites."
-    />
-</CardGrid>
+import LinkCard from '../../../components/LinkCard.astro';
+
+## Latest Articles
+
+<LinkCard 
+  href="/en/astro" 
+  title="Astro" 
+  description="Astro is widely adopted for developing content-driven sites." 
+/>
