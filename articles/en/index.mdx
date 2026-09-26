@@ -1,21 +1,23 @@
 ---
 title: Welcome
-description: Welcome
+description: ITpedia is an IT-focused Wiki built on GitHub.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Happy you!!!
+  tagline: ITpedia is an IT-focused Wiki built on GitHub.
   image:
     file: ../../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: View on GitHub
+      link: https://github.com/hay0812/wiki-content
       icon: external
-      variant: minimal
+      attrs:
+        rel: me
+    - text: Introduction
+      link: /en/menu/next
+      icon: right-arrow
+      attrs:
+        rel: me
 ---
-## Latest Articles
 
 import LinkCard from '@/components/LinkCard.astro';
 
@@ -25,4 +27,9 @@ import LinkCard from '@/components/LinkCard.astro';
   href="/en/astro" 
   title="Astro" 
   description="Astro is widely adopted for developing content-driven sites." 
+/>
+<LinkCard 
+  href="/en/html" 
+  title="HTML" 
+  description="HTML (HyperText Markup Language) is one of the markup languages used to describe hypertext." 
 />

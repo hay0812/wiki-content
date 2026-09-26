@@ -1,19 +1,22 @@
 ---
 title: ようこそ
-description: ようこそ
+description: ITpediaはGithubを通して構築されるIT特化のWikiです。
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: ITpediaはGithubを通して構築されるIT特化のWikiです。
+  tagline: ITpediaはGitHubを通して構築されるIT特化のWikiです。
   image:
     file: ../../../assets/houston.webp
   actions:
-    - text: Githubを見る
+    - text: GitHubを見る
       link: https://github.com/hay0812/wiki-content
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
       icon: external
-      variant: minimal
+      attrs:
+        rel: me
+    - text: はじめに
+      link: /ja/menu/next
+      icon: right-arrow
+      attrs:
+        rel: me
 ---
 import LinkCard from '@/components/LinkCard.astro';
 
