@@ -25,4 +25,4 @@ Astro自体のコンポーネントだけでなく、React、Preact、Svelte、V
 ただし、UIフレームワークを使用したからといって自動的にクライアント側JavaScriptが実行されるわけではない。クライアント側で動作させる場合は、client:* ディレクティブによってハイドレーションを指定する。
 
 ## 出典
-- [MDN Web Docs](https://docs.astro.build/)
+- [Astro Docs](https://docs.astro.build/)
