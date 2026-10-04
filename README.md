@@ -15,7 +15,7 @@ wiki-content/
 └── README.md
 ```
 
-公開対象の記事は `articles/**/*.md` に配置してください。
+記事の追加・編集ルールは [CONTRIBUTING.md](CONTRIBUTING.md) を確認してください。
 
 ## 公開までの流れ
 
@@ -32,16 +32,10 @@ GitHub Webhook
     ↓
 同期処理
     ↓
-R2
-    ↓
 Wikiサイト
 ```
 
 GitHubは原稿の管理・レビュー・変更履歴を担い、Webサイト側では実行時用のコピーを利用します。
-
-## 執筆について
-
-記事の作成・変更については [CONTRIBUTING.md](CONTRIBUTING.md) を確認してください。
 
 ## ライセンス
 

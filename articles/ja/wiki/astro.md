@@ -24,3 +24,5 @@ Astro自体のコンポーネントだけでなく、React、Preact、Svelte、V
 例えば、ページ本体をAstroで構築し、一部の高度なインタラクティブUIだけReactで実装するといった構成が可能である。
 ただし、UIフレームワークを使用したからといって自動的にクライアント側JavaScriptが実行されるわけではない。クライアント側で動作させる場合は、client:* ディレクティブによってハイドレーションを指定する。
 
+## 出典
+- [MDN Web Docs](https://docs.astro.build/)
